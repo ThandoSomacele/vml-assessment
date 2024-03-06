@@ -1,14 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import ClientLogos from './ClientLogos';
 
 function Hero() {
-  const clientLogos = [
-    { name: 'databiz', img: 'client-databiz.svg', width: '114', height: '20' },
-    { name: 'audiophile', img: 'client-audiophile.svg', width: '73', height: '36' },
-    { name: 'meet', img: 'client-meet.svg', width: '90', height: '20' },
-    { name: 'maker', img: 'client-maker.svg', width: '83', height: '24' },
-  ];
-
   return (
     <div className='text-almost_black flex flex-col gap-10'>
       {/* For the VML team - The "Image" component is the same as "img" tag but is better because it optimises images on deployement */}
@@ -19,9 +13,9 @@ function Hero() {
         height='750'
         width='564'
       />
-      <div className='container hero-copy flex flex-col items-center text-center gap-6'>
+      <div className='container mx-auto hero-copy flex flex-col items-center text-center gap-6'>
         <h1 className='text-3xl font-[700] -mb-3'>Make remote work</h1>
-        <p className='font-[500]'>
+        <p className='font-[500] text-medium_gray'>
           Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
           productivity soar.
         </p>
@@ -31,19 +25,7 @@ function Hero() {
           href='https://github.com/ThandoSomacele/vml-assessment'>
           Learn more
         </Link>
-        <div className='client-logos flex gap-5'>
-          {clientLogos.map((client, i) => (
-            <Image
-              key={i}
-              id={`${client.name}-logo`}
-              className='client-logo w-[80px] h-[28px] object-contain'
-              src={`/client-logos/${client.img}`}
-              width={client.width}
-              height={client.height}
-              alt={`${client.name} client logo`}
-            />
-          ))}
-        </div>
+        <ClientLogos />
       </div>
     </div>
   );
