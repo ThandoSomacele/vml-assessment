@@ -10,12 +10,12 @@ function ClientLogos() {
   ];
 
   return (
-    <div className='client-logos flex gap-5'>
+    <div className='client-logos flex gap-5 lg:mt-7 md:mt-4'>
       {clientLogos.map((client, i) => (
         <Image
           key={i}
           id={`${client.name}-logo`}
-          className='client-logo w-[70px] h-[23px] object-contain'
+          className='client-logo w-[70px] md:w-[95px] h-[25px] md:h-[35px] object-contain'
           src={`/client-logos/${client.img}`}
           width={client.width}
           height={client.height}
