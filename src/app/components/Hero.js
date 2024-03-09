@@ -7,7 +7,7 @@ function Hero() {
     <>      
     {/* For the VML team - The "Image" component is the same as "img" tag but is better because it optimises images on deployement */}
       <Image
-        className='hero-image lg:hidden md:mx-auto md:mt-10 w-screen'
+        className='hero-image lg:hidden mx-auto md:mt-10 w-screen'
         src='/home-images/image-hero-mobile.png'
         alt='Mobile hero image'
         height='750'
@@ -24,7 +24,7 @@ function Hero() {
 
         {/* For the VML team - The "Link" component is the same as "a" tag but is better because it optimises links to be prepard on the server instead on fecthing on client side for perfomance reasons as the the quesions asked in the interview :) */}
         <Link
-          className='btn bg-almost_black text-almost_white px-5 py-3 w-max rounded-2xl hover:bg-transparent border-black border transition-colors duration-300 mb-5 lg:hover:text-almost_black'
+          className='btn bg-almost_black text-almost_white px-5 py-3 rounded-2xl hover:bg-transparent border-black border transition-colors duration-300 mb-5 lg:hover:text-almost_black'
           href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'>
           Learn more
         </Link>
