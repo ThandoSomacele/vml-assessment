@@ -16,11 +16,12 @@ function SideBarNav() {
   return (
     <>
      <div className='mobile-header md:p-8 p-4 lg:hidden flex justify-between  w-screen' >
-       <Link href={'/'}><Image src='/logo.svg' width='84' height='27' alt='snap logo' className='object-contain' /></Link>
+       <Link href={'/'}><Image src='/logo.svg' width='84' height='27' alt='snap logo' className='object-con`tain' /></Link>
         <Image className='object-contain lg:hidden' src='/icons/icon-menu.svg' width='32' height='32' alt='snap logo' onClick={handleSidebarNav} />
       </div>
     <div className={`lg:hidden ${showBgFilter} mobile-bg-filter w-screen h-screen bg-black bg-opacity-70 absolute top-0 right-0 flex justify-end items-start overflow-hidden`} onClick={handleSidebarNav}>
-      <div className={`${showSidebar} bg-white w-2/3 h-screen px-6 py-4 flex flex-col justify-start items-end`}>
+      </div>
+      <div className={`absolute top-0 right-0 ${showSidebar} bg-white w-2/3 h-screen px-6 py-4 flex flex-col justify-start items-end`}>
             {/* <XMarkIcon className='w-10 text-almost_black' /> */}
             <Image className='object-contain lg:hidden' src='/icons/icon-close-menu.svg' width='32' height='32' alt='snap logo' onClick={handleSidebarNav}/>
             <nav className='lg:hidden w-full text-sm py-5 md:px-10 tracking-[0.5px]'>
@@ -59,11 +60,11 @@ function SideBarNav() {
               </ul>
               <div className='register-btns-mobile mt-8 flex flex-col gap-3 group-open:-rotate-180gap-10 items-center text-medium_gray'>
                 <button>Login</button>
-                <button className='border-2 border-medium_gray px-6 py-2.5 w-full rounded-2xl'>Register</button>
+                <Link className='w-full' href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'><button className='border-2 border-medium_gray px-6 py-2.5 w-full rounded-2xl'>Register</button></Link>
               </div>
             </nav>
         </div>
-      </div>
+   
       </>
   )
 }

@@ -54,8 +54,8 @@ function Header() {
           </li>
         </ul>
         <div className='register-btns flex gap-10 items-center text-medium_gray'>
-          <button  className='hover:text-almost_black'>Login</button>
-          <button className='border-2 border-medium_gray px-6 py-2.5 rounded-2xl hover:text-almost_black hover:border-almost_black'>Register</button>
+          <button className='hover:text-almost_black'>Login</button>
+          <Link href='https://github.com/ThandoSomacele/vml-assessment' target='_blank' ><button className='border-2 border-medium_gray px-6 py-2.5 rounded-2xl hover:text-almost_black hover:border-almost_black'>Register</button></Link>
         </div>
       </nav>
     </div>
