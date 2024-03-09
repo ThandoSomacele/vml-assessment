@@ -19,7 +19,7 @@ function Header() {
 
 
   return (
-    <div className='header px-10 py-6 lg:flex items-center justify-start gap-16 w-screen hidden' >
+    <div className='header px-[3%] py-6 lg:flex items-center justify-start gap-16 w-screen hidden' >
       <Link href={'/'}><Image src='/logo.svg' width='84' height='27' alt='snap logo' className='object-contain' /></Link>
       <nav className='lg:flex items-center justify-between w-full hidden lg:text-sm tracking-[0.5px]'>
         <ul className='flex gap-10 text-medium_gray'>

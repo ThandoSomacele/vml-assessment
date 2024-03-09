@@ -6,10 +6,10 @@ import Image from 'next/image';
 
     
 function SideBarNav() {
-    const [showSidebar, setShowSidebar] = useState('translate-x-[100%]');
+    const [showSidebar, setShowSidebar] = useState('translate-x-[100%] hidden');
     const [showBgFilter, setShowBgFilter] = useState('hidden');
     const handleSidebarNav =()=>{
-      showSidebar === 'translate-x-[100%]' ? setShowSidebar('translate-x-[0%]') : setShowSidebar('translate-x-[100%]')
+      showSidebar === 'translate-x-[100%] hidden' ? setShowSidebar('translate-x-[0%] flex') : setShowSidebar('translate-x-[100%] hidden')
       showBgFilter === 'hidden' ? setShowBgFilter('flex') : setShowBgFilter('hidden')
         }
   
@@ -21,7 +21,7 @@ function SideBarNav() {
       </div>
     <div className={`lg:hidden ${showBgFilter} mobile-bg-filter w-screen h-screen bg-black bg-opacity-70 absolute top-0 right-0 flex justify-end items-start overflow-hidden`} onClick={handleSidebarNav}>
       </div>
-      <div className={`absolute top-0 right-0 ${showSidebar} bg-white w-2/3 h-screen px-6 py-4 flex flex-col justify-start items-end`}>
+      <div className={`absolute top-0 right-0 ${showSidebar} bg-white w-2/3 h-screen px-6 py-4 flex-col justify-start items-end`}>
             {/* <XMarkIcon className='w-10 text-almost_black' /> */}
             <Image className='object-contain lg:hidden' src='/icons/icon-close-menu.svg' width='32' height='32' alt='snap logo' onClick={handleSidebarNav}/>
             <nav className='lg:hidden w-full text-sm py-5 md:px-10 tracking-[0.5px]'>
