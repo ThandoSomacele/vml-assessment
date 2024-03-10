@@ -26,7 +26,7 @@ function Hero() {
         <Link
           className='btn bg-almost_black text-almost_white px-5 py-3 rounded-2xl hover:bg-transparent border-black border transition-colors duration-300 mb-5 lg:hover:text-almost_black'
           href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'>
-          Learn more
+          Learn&nbsp;more
         </Link>
         <ClientLogos />
       </div>
