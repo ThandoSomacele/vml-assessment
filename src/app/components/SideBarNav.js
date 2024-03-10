@@ -9,7 +9,7 @@ function SideBarNav() {
     const [showSidebar, setShowSidebar] = useState('right-[-100%]');
     const [showBgFilter, setShowBgFilter] = useState('hidden');
     const handleSidebarNav =()=>{
-      showSidebar === 'right-[-100%]' ? setShowSidebar('right-0 flex') : setShowSidebar('right-[-100%]')
+      showSidebar === 'right-[-100%]' ? setShowSidebar('right-0') : setShowSidebar('right-[-100%]')
       showBgFilter === 'hidden' ? setShowBgFilter('flex') : setShowBgFilter('hidden')
         }
   
@@ -21,7 +21,7 @@ function SideBarNav() {
       </div>
     <div className={`lg:hidden ${showBgFilter} mobile-bg-filter w-screen h-screen bg-black bg-opacity-70 absolute top-0 right-0 flex justify-end items-start overflow-hidden`} onClick={handleSidebarNav}>
       </div>
-      <div className={`fixed top-0 ${showSidebar} transition-all duration-1000 bg-white w-2/3 h-screen px-6 py-4 flex-col justify-start items-end`}>
+      <div className={`fixed top-0 ${showSidebar} flex transition-all duration-1000 bg-white w-2/3 h-screen px-6 py-4 flex-col justify-start items-end`}>
             {/* <XMarkIcon className='w-10 text-almost_black' /> */}
             <Image className='object-contain lg:hidden' src='/icons/icon-close-menu.svg' width='32' height='32' alt='snap logo' onClick={handleSidebarNav}/>
             <nav className='lg:hidden w-full text-sm py-5 md:px-10 tracking-[0.5px]'>
