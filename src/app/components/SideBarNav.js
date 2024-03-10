@@ -70,7 +70,7 @@ function SideBarNav() {
                   </button>
                   <ul className='px-5 flex flex-col gap-5' style={companyContentStyle} ref={companyContent}>
                     <li className='flex mt-5 items-center gap-4'>History</li>
-                    <li className='flex items-center gap-4'>Our Team</li>ç
+                    <li className='flex items-center gap-4'>Our Team</li>
                     <li className='flex items-center gap-4'>Blog</li>
                   </ul>
                 </li>
