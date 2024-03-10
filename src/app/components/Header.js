@@ -27,8 +27,8 @@ function Header() {
             <Link href={'#'} className='group focus:text-almost_black flex gap-1.5 items-center hover:text-almost_black' onClick={toggleFeatures}>
               Features <Image className='object-contain group-focus:rotate-180' src='/icons/icon-arrow-down.svg' width={10} height={10} alt='dropdown icon'/>
             </Link>
-            <ul className={`${displayFetures} bg-white absolute p-6 flex-col gap-3 shadow-2xl rounded-xl -ml-[5%] mt-3.5 text-[13px] z-50`}>
-                <li><Link className='hover:text-[#726CEE] flex items-center gap-4' href={'#'} onClick={toggleFeatures}><Image className='object-contain' src='/icons/icon-todo.svg' width={14} height={14} alt='todo icon'/>Todo List</Link></li>
+            <ul className={`${displayFetures} bg-white absolute p-6 flex-col gap-3 rounded-xl -ml-[5%] mt-3.5 text-[13px] z-50`}  style={{boxShadow:'0 10px 50px -8px rgba(0, 0, 0, 0.25)'}}>
+                <li><Link className='hover:text-[#726CEE] flex items-center gap-4' href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'onClick={toggleFeatures}><Image className='object-contain' src='/icons/icon-todo.svg' width={14} height={14} alt='todo icon'/>Todo List</Link></li>
                 <li><Link className='hover:text-[#4BB1DA] flex items-center gap-4' href={'#'} onClick={toggleFeatures}><Image className='object-contain' src='/icons/icon-calendar.svg' width={14} height={14} alt='calendar icon'/>Calendar</Link></li>
                 <li><Link className='hover:text-[#EDD556] flex items-center gap-4' href={'#'} onClick={toggleFeatures}><Image className='object-contain' src='/icons/icon-reminders.svg' width={14} height={14} alt='reminders icon'/>Reminders</Link></li>
                 <li><Link className='hover:text-[#8E4CB6] flex items-center gap-4' href={'#'} onClick={toggleFeatures}><Image className='object-contain' src='/icons/icon-planning.svg' width={14} height={14} alt='planning icon'/>Planning</Link></li>
@@ -39,23 +39,23 @@ function Header() {
             <Link href={'#'} className='group focus:text-almost_black flex gap-1.5 items-center hover:text-almost_black' onClick={toggleCompany}>
               Company <Image className='group-focus:rotate-180 object-contain' src='/icons/icon-arrow-down.svg' width={10} height={10} alt='dropdown icon'/>
             </Link>
-            <ul className={`${displayComapany} absolute p-6 flex-col gap-3 shadow-2xl rounded-xl mt-3.5 text-[13px] bg-white z-50`}>
-              <li><Link className='hover:text-almost_black' href={'#'} onClick={toggleCompany}>History</Link></li>
+            <ul className={`${displayComapany} absolute p-6 flex-col gap-3 rounded-xl mt-3.5 text-s bg-white z-50`} style={{boxShadow:'0 10px 50px -8px rgba(0, 0, 0, 0.25)'}}>
+              <li><Link className='hover:text-almost_black' href='https://github.com/ThandoSomacele/vml-assessment' target='_blank' onClick={toggleCompany}>History</Link></li>
               <li><Link className='hover:text-almost_black' href={'#'} onClick={toggleCompany}>Our Team</Link></li>
               <li><Link className='hover:text-almost_black' href={'#'} onClick={toggleCompany}>Blog</Link></li>
             </ul>
             <div className={`${displayComapany} w-screen h-screen absolute top-0 right-0`}  onClick={toggleCompany}/>
           </li>
           <li>
-            <Link className='hover:text-almost_black' href={'#'}>Careers</Link>
+            <Link className='hover:text-almost_black' href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'>Careers</Link>
           </li>
           <li>
-            <Link className='hover:text-almost_black' href={'#'}>About</Link>
+            <Link className='hover:text-almost_black' href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'>About</Link>
           </li>
         </ul>
         <div className='register-btns flex gap-10 items-center text-medium_gray'>
-          <button className='hover:text-almost_black'>Login</button>
-          <Link href='https://github.com/ThandoSomacele/vml-assessment' target='_blank' ><button className='border-2 border-medium_gray px-6 py-2.5 rounded-2xl hover:text-almost_black hover:border-almost_black'>Register</button></Link>
+          <button className='hover:text-almost_black' href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'>Login</button>
+          <button className='border-2 border-medium_gray px-6 py-2.5 rounded-2xl hover:text-almost_black hover:border-almost_black'>Register</button>
         </div>
       </nav>
     </div>

@@ -58,7 +58,7 @@ function SideBarNav() {
                 <button className='flex gap-3 items-center' onClick={handleFeatureCollapse}>Features <Image className={`${isFeautureRotated ? 'rotate-180' : 'rotate-0'} object-contain`} src='/icons/icon-arrow-down.svg' width={11} height={11} alt='dropdown icon'/>
                   </button>
                   <ul className='px-5 flex flex-col gap-5' style={featureContentStyle} ref={featureContent}>
-                    <li className='flex mt-5 items-center gap-4'><Image className='object-contain' src='/icons/icon-todo.svg' width={16} height={16} alt='todo icon'/>Todo List</li>
+                    <li><Link className='flex mt-5 items-center gap-4' href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'><Image className='object-contain' src='/icons/icon-todo.svg' width={16} height={16} alt='todo icon'/>Todo List</Link></li>
                     <li className='flex items-center gap-4'><Image className='object-contain' src='/icons/icon-calendar.svg' width={16} height={16} alt='calendar icon'/>Calendar</li>
                     <li className='flex items-center gap-4'><Image className='object-contain' src='/icons/icon-reminders.svg' width={16} height={16} alt='reminders icon'/>Reminders</li>
                     <li className='flex items-center gap-4'><Image className='object-contain' src='/icons/icon-planning.svg' width={16} height={16} alt='planning icon'/>Planning</li>
@@ -69,16 +69,16 @@ function SideBarNav() {
                  <button className='flex gap-3 items-center' onClick={handleCompanyCollapse}>Company<Image className={`${isCompanyRotated ? 'rotate-180' : 'rotate-0'} object-contain`} src='/icons/icon-arrow-down.svg' width={11} height={11} alt='dropdown icon'/>
                   </button>
                   <ul className='px-5 flex flex-col gap-5' style={companyContentStyle} ref={companyContent}>
-                    <li className='flex mt-5 items-center gap-4'>History</li>
+                    <li className='flex mt-5 items-center gap-4'><Link href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'>History</Link></li>
                     <li className='flex items-center gap-4'>Our Team</li>
                     <li className='flex items-center gap-4'>Blog</li>
                   </ul>
                 </li>
                 <li>
-                  <Link href='#'>Careers</Link>
+                  <Link href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'>Careers</Link>
                 </li>
                 <li>
-                  <Link href='#'>About</Link>
+                  <Link href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'>About</Link>
                 </li>
               </ul>
               <div className='register-btns-mobile mt-8 flex flex-col gap-3 group-open:-rotate-180gap-10 items-center text-medium_gray'>
