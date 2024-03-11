@@ -32,7 +32,7 @@ function Hero() {
         </Link>
         <ClientLogos />
       </div>
-     <Tilt className='hidden lg:block w-4/5'>
+     <Tilt className='hidden lg:block w-10/12'>
       <Image
         className='hero-image w-full'
         src='/home-images/image-hero-desktop.png'
