@@ -82,8 +82,8 @@ function SideBarNav() {
                 </li>
               </ul>
               <div className='register-btns-mobile mt-8 flex flex-col gap-3 group-open:-rotate-180gap-10 items-center text-medium_gray'>
-                <button>Login</button>
-                <Link className='w-full' href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'><button className='border-2 border-medium_gray px-6 py-2.5 w-full rounded-2xl'>Register</button></Link>
+                <Link href={'#'}>Login</Link>
+                <Link className='border-2 border-medium_gray px-6 py-2.5 w-full rounded-2xl text-center' href='https://github.com/ThandoSomacele/vml-assessment' target='_blank'>Register</Link>
               </div>
             </nav>
         </div>
