@@ -13,7 +13,8 @@
     "eslint-config-prettier": "^9.1.0",
     "next": "14.1.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-parallax-tilt": "^1.7.214"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
