@@ -4,8 +4,8 @@ import './globals.css';
 const epilogue = Epilogue({ weight: ['500', '700'], subsets: ['latin'] });
 
 export const metadata = {
-  title: 'VML Assessment',
-  description: "Depending on this assessment, it's a Yeyi :) or Neyi :(",
+  title: 'span psuedo',
+  description: "span to earn more...",
 };
 
 export default function RootLayout({ children }) {
