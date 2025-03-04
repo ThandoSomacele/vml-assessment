@@ -9,15 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "next": "14.1.2",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.2"
+    "react-parallax-tilt": "^1.7.214"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/react": "^18.2.64",
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.1.2"
+    "eslint-config-next": "14.1.2",
+    "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "tailwindcss": "^3.4.1"
   }
 }
